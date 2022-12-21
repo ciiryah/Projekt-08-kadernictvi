@@ -10,9 +10,9 @@
 
 	<!-- Bootstrap styly -->
 	<!-- Toto je styl stažený ze stránek Bootstrapu a přidaný do složky našeho projektu, ale mohli bychom místo toho mít i styl napojený přímo z CDN v internetu -->
-	<!--
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	-->
+
 
 	<!-- naše CSS styly -->
 	<link rel="stylesheet" href="css/style.css">
@@ -21,25 +21,53 @@
 
 
 	<!-- Hlavicka -->
-	<h1>Kadeřnictví Scissors <small>(není opravdové)</small></h1>
+		<nav class="navbar bg-light">
+			<div class="container-fluid">
+				<span class="navbar-brand mb-0 h1">Kadeřnictví Scissors</span>
+			</div>
+				
 
 
 
 	<!-- Hlavni menu -->
-	<ul>
-		<li><a href="#kadernice">Kadeřnice</a></li>
-		<li><a href="#sluzby">Služby</a></li>
-		<li><a href="#reference">Řekli o nás</a></li>
-		<li><a href="#fotogalerie">Fotogalerie</a></li>
-		<li><a href="#kontakt">Kontakt</a></li>
-	</ul>
-
-
+			<div class="col-6">
+				<ul>
+					<li><a href="#kadernice">Kadeřnice</a></li>
+					<li><a href="#sluzby">Služby</a></li>
+					<li><a href="#reference">Řekli o nás</a></li>
+					<li><a href="#fotogalerie">Fotogalerie</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
+				</ul>
+			</div>
+		</nav>
 
 	<!-- Obrazek -->
-	<img src="images/carousel1.jpg" alt="Kadeřnictví">
-
-
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="images/carousel1.jpg" class="d-block w-100" alt="Kadeřnictví">
+		  </div>
+		  <div class="carousel-item">
+			<img src="images/carousel2.jpg" class="d-block w-100" alt="Kadeřnictví">
+		  </div>
+		  <div class="carousel-item">
+			<img src="images/carousel3.jpg" class="d-block w-100" alt="Kadeřnictví">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Předchozí</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Následující</span>
+		</button>
+	  </div>
 
 	<!-- Akce, novinky -->
 	<h2>Akce -30&nbsp;%</h2>
@@ -48,20 +76,30 @@
 
 
 	<!-- Kadernice -->
+	
+		<h2 id="kadernice" class="text-center">Naše kadeřnice</h2>
+	<div class="container p-5">
+		<div class="row">
+		<div class="col-4 text-center">
+			<img src="images/kadernice-helena.jpg" class="rounded-circle w-50" alt="Helena Králíková">
+			<h3 class="p-3">Helena Králíková</h3>
+			<p>Kadeřnice s více než patnáctiletou praxí, jedna ze zakladatelek české kadeřnické akademie. Specialistka na exotické účesy pro zvláštní příležitosti.</p>
+		</div>
 
-	<h2 id="kadernice">Naše kadeřnice</h2>
+		<div class="col-4 text-center">
+			<img src="images/kadernice-eliska.jpg" class="rounded-circle w-50" alt="Eliška Dvořáková">
+			<h3 class="p-3">Eliška Dvořáková</h3>
+			<p>Držitelka několika národních i mezinárodních ocenění, mimo jiné i Kadeřnice roku a Účes roku. Spolupracuje s předními českými i světovými kadeřníky.</p>
+		</div>
 
-	<img src="images/kadernice-helena.jpg" alt="Helena Králíková">
-	<h3>Helena Králíková</h3>
-	<p>Kadeřnice s více než patnáctiletou praxí, jedna ze zakladatelek české kadeřnické akademie. Specialistka na exotické účesy pro zvláštní příležitosti.</p>
-
-	<img src="images/kadernice-eliska.jpg" alt="Eliška Dvořáková">
-	<h3>Eliška Dvořáková</h3>
-	<p>Držitelka několika národních i mezinárodních ocenění, mimo jiné i Kadeřnice roku a Účes roku. Spolupracuje s předními českými i světovými kadeřníky.</p>
-
-	<img src="images/kadernice-jarmila.jpg" alt="Jarmila Prokopová">
-	<h3>Jarmila Prokopová</h3>
-	<p>Specialistka na pánské a dětské střihy se zkušenostmi s česáním módních přehlídek a vlasových show. Certifikovaná odbornice na modeláž nehtů.</p>
+		<div class="col-4 text-center">
+			<img src="images/kadernice-jarmila.jpg" class="rounded-circle w-50" alt="Jarmila Prokopová">
+			<h3 class="p-3">Jarmila Prokopová</h3>
+			<p>Specialistka na pánské a dětské střihy se zkušenostmi s česáním 
+			módních přehlídek a vlasových show. Certifikovaná odbornice na modeláž nehtů.</p>
+		</div>
+		</div>
+	</div>
 
 	<!-- konec #kadernice -->
 
@@ -69,7 +107,7 @@
 
 	<!-- Sluzby -->
 
-	<h2 id="sluzby">Služby</h2>
+	<h2 id="sluzby" class="text-center">Služby</h2>
 
 	<img src="images/sluzby-damske.svg" width="100" height="100" alt="Dámské kadeřnictví">
 	<h3>Dámské kadeřnictví</h3>
@@ -83,7 +121,7 @@
 	<h3>Kosmetika a péče o pleť</h3>
 	<p>Ošetření pleti, masáže obličeje, úprava a barvení řas a obočí, líčení pro všechny příležitosti, depilace, manikůra, poradenství a prodej kosmetiky na domácí péči.</p>
 
-	<table>
+	<table class="table table-bordered">
 		<tbody>
 			<tr>
 				<td>Dámské stříhání</td>
@@ -122,7 +160,7 @@
 
 	<!-- Reference / Rekli o nas -->
 
-	<h2 id="reference">Řekli o nás</h2>
+	<h2 id="reference" class="text-center">Řekli o nás</h2>
 
 	<img src="images/reference-lucie.jpg" alt="Lucie Nováková">
 	<p>Kadeřnictví Scissors je v Praze prostě nejlepší. Vím to s jistotou, protože normálně mám vlasy jako dikobraz a po ostřihání vypadám vždy jako supermodelka.<br>
@@ -146,32 +184,32 @@
 
 	<!-- Fotogalerie -->
 
-	<h2 id="fotogalerie">Fotogalerie</h2>
-
-	<img src="images/foto01.jpg" alt="Foto 01">
-	<img src="images/foto02.jpg" alt="Foto 02">
-	<img src="images/foto03.jpg" alt="Foto 03">
-	<img src="images/foto04.jpg" alt="Foto 04">
-	<img src="images/foto05.jpg" alt="Foto 05">
-	<img src="images/foto06.jpg" alt="Foto 06">
-	<img src="images/foto07.jpg" alt="Foto 07">
-	<img src="images/foto08.jpg" alt="Foto 08">
-	<img src="images/foto09.jpg" alt="Foto 09">
-	<img src="images/foto10.jpg" alt="Foto 10">
-	<img src="images/foto11.jpg" alt="Foto 11">
-	<img src="images/foto12.jpg" alt="Foto 12">
-
+	<h2 id="fotogalerie" class="text-center">Fotogalerie</h2>
+	<div class="row g-0 row-cols-lg-6 container-fluid">
+			<img src="images/foto01.jpg" class="img-fluid" alt="Foto 01">
+			<img src="images/foto02.jpg" class="img-fluid" alt="Foto 02">
+			<img src="images/foto03.jpg" class="img-fluid" alt="Foto 03">
+			<img src="images/foto04.jpg" class="img-fluid" alt="Foto 04">
+			<img src="images/foto05.jpg" class="img-fluid" alt="Foto 05">
+			<img src="images/foto06.jpg" class="img-fluid" alt="Foto 06">
+			<img src="images/foto07.jpg" class="img-fluid" alt="Foto 07">
+			<img src="images/foto08.jpg" class="img-fluid" alt="Foto 08">
+			<img src="images/foto09.jpg" class="img-fluid" alt="Foto 09">
+			<img src="images/foto10.jpg" class="img-fluid" alt="Foto 10">
+			<img src="images/foto11.jpg" class="img-fluid" alt="Foto 11">
+			<img src="images/foto12.jpg" class="img-fluid" alt="Foto 12">
+	</div>
 	<!-- konec #fotogalerie -->
 
 
 
 	<!-- Kontakt -->
 
-	<h2 id="kontakt">Kontakt</h2>
+	<h2 id="kontakt" class="text-center">Kontakt</h2>
 
 	<h3>Otevírací doba</h3>
 
-	<table>
+	<table class="table table-bordered">
 		<tbody>
 			<tr>
 				<td>Pondělí&ndash;čtvrtek</td>
@@ -238,9 +276,9 @@
 
 	<!-- Volitelný JavaScript (nutný pro aktivní komponenty) -->
 	<!-- Toto je JavaScript stažený ze stránek Bootstrapu a přidaný do složky našeho projektu, ale mohli bychom místo toho mít i skript napojený přímo z CDN v internetu -->
-	<!--
+
 	<script src="js/bootstrap.bundle.min.js"></script>
-	-->
+
 
 </body>
 </html>
